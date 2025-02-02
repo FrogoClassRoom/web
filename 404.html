@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      const path = window.location.pathname;
+      const baseUrl = '/web';
+      // Only redirect if we're not at the root and in the correct repository
+      if (path.startsWith(baseUrl) && path !== baseUrl && path !== baseUrl + '/') {
+        window.location.href = baseUrl;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
